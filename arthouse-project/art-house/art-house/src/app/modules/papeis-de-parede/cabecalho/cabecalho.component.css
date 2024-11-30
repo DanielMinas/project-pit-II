@@ -1,0 +1,26 @@
+.navbar {
+    background-color: var(--Cinza-escuro-escuro);
+    border-top: 1px solid var(--Branco);
+    border-bottom: 1px solid var(--Branco);
+    height: 80px;
+}
+
+.navbar-nav .nav-item {
+    color: var(--Branco);
+    font-variant-numeric: lining-nums proportional-nums;
+}
+
+button {
+    color: var(--Branco);
+    background-color: unset;
+    border: unset;
+}
+
+.dropdown-menu {
+    width: 200px;
+    z-index: 1000;
+}
+
+.dropdown-menu .active {
+    background-color: var(--Cinza-claro);
+}

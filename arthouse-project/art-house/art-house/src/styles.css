@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+    --Preto: #000000;
+    --Cinza-escuro-escuro: #1D1C1C;
+    --Cinza-escuro: #353535;
+    --Cinza-claro: #B3B3B3;
+    --Cinza-claro-claro: #E7E8EB;
+    --Branco: #FAFAFA;
+    --Azul-medio-claro: #889DC7;
+    --Botao-azul: #2065EF;
+    --Botao-verde: #0EA045;
+    --Azul-ativado: #0056b3;
+    --Cinza-ativado: #121212;
+}
+
+body, html {
+    height: 100%;
+}
+
+body { 
+    margin: 0;
+    font-family: 'Raleway', 'Montserrat', sans-serif;
+    background-color: var(--Branco);
+    font-variant-numeric: lining-nums proportional-nums;
+}
+    

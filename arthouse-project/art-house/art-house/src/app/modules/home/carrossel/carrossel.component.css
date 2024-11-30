@@ -1,0 +1,13 @@
+.carousel-item img {
+    height: 90vh;
+}
+
+#carouselMobile .carousel-item img {
+    height: 400px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}

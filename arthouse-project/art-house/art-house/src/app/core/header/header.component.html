@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark" id="navbar">
+  <div class="container">
+    <a class="navbar-brand d-flex flex-grow-1" href="/home"><img src="/assets/logos/LogoBrancaPNG.png" alt="Logo Branca ArtHouse" width="120" height="55"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a [ngClass]="{'active': path === 'home'}" class="nav-link px-3 fs-6 active" aria-current="page" href="/home">Home</a>
+        <a [ngClass]="{'active': path === 'papeisdeparede'}" class="nav-link px-3 fs-6" href="/papeisdeparede">Papeis de parede</a>
+        <a [ngClass]="{'active': path === 'personalizados'}" class="nav-link px-3 fs-6" href="/personalizados">Personalizados</a>
+        <a [ngClass]="{'active': path === 'sobrenos'}" class="nav-link px-3 fs-6" href="/sobrenos">Sobre nós</a>
+        <a [ngClass]="{'active': path === 'contato'}" class="nav-link px-3 fs-6" href="/contato">Contato</a>
+      </div>
+    </div>
+  </div>
+</nav>

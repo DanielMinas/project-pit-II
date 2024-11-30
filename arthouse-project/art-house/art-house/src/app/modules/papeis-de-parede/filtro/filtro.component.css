@@ -1,0 +1,41 @@
+.container-filtro {
+    background-color: var(--Cinza-escuro-escuro);
+    min-height: 100%;
+}
+
+button {
+    background-color: var(--Cinza-escuro-escuro);
+    font-variant-numeric: lining-nums proportional-nums;
+}
+
+.accordion-button {
+    color: var(--Branco);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--Cinza-escuro-escuro);
+}
+
+.accordion-body {
+    background-color: var(--Cinza-escuro-escuro);
+}
+
+hr {
+    color: var(--Branco);
+}
+.form-check-input {
+    width: 25px;
+    height: 25px;
+}
+.form-check-label:hover, .form-check-input:hover {
+    cursor: pointer;
+}
+.accordion-body .btn:hover {
+    cursor: default;
+}
+
+img {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+}

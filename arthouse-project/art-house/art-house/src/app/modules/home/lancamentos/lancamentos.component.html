@@ -1,0 +1,18 @@
+<div *ngIf="isLoading" class="loading-overlay">
+  <app-loading-modal />
+</div>
+
+<section class="container mb-5">
+  <h2 class="text-center mt-5">Principais Lançamentos</h2>
+
+  <div class="row row-cols-lg-4 row-cols-2 g-4 mt-3">
+    <div *ngFor="let imageData of imageDataList">
+      <ng-container *ngIf="imageData.statusProduto === 'Lançamentos'">
+        <app-card-papel-de-parede (click)="openPapelIndividualModal(imageData.idProduto)"
+          [grupo]="imageData.statusProduto" aspectRatio="rectangular" [imagePath]="getImageUrl(imageData.contProduto)"
+          [idProduto]="imageData.idProduto" [nomeProduto]="nomeProduto"
+          [descProduto]="descProduto"></app-card-papel-de-parede>
+      </ng-container>
+    </div>
+  </div>
+</section>

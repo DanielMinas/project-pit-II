@@ -1,0 +1,36 @@
+article {
+    cursor: pointer;
+}
+.card {
+    border-radius: 5px;
+}
+
+.aspect-ratio-square {
+    aspect-ratio: 1/1;
+}
+
+.aspect-ratio-rectangular {
+    aspect-ratio: 2/3;
+}
+
+.custom-badge {
+    background-color: var(--Azul-medio-claro);
+    border-radius: 5px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    color: var(--Black);
+    font-weight: 600;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.badge-content {
+    background-color: var(--Azul-medio-claro);
+}
+
+@media (max-width: 575px) {
+    .aspect-ratio-rectangular {
+        aspect-ratio: 1/1;
+    }
+}

@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: homol
+---
+spring:
+  profiles:
+    active: mineiro
+---
+spring:
+  profiles:
+    active: andrade
+---
+spring:
+  profiles:
+    active: homol

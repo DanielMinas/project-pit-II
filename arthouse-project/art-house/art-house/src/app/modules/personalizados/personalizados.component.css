@@ -1,0 +1,47 @@
+.container {
+    margin: 20px auto;
+    padding: 20px;
+}
+
+
+.fa-badge-check {
+    color: var(--Botao-verde);
+}
+
+ul li {
+    list-style-type: none;
+}
+
+p,
+li {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.highlight {
+    color: var(--Preto);
+    font-weight: bold;
+}
+
+.botao-container {
+    min-width: 50%;
+}
+
+.btn {
+    font-weight: 500;
+    min-height: 56px;
+    width: 100%;
+    border: 0;
+    border-radius: 2px;
+}
+
+.btn-whatsapp {
+    background-color: var(--Botao-verde);
+    color: var(--Branco);
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+}

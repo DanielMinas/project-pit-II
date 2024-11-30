@@ -1,0 +1,39 @@
+version: '3.8'
+services:
+  arthouse_db:
+    build:
+      context: ./arthouse-db
+    image: fallsoft/arthouse_db:latest
+    ports:
+      - 3306:3306
+    container_name: arthouse_db
+    environment:
+      - MYSQL_ROOT_PASSWORD=Meerrajeison1
+      - MYSQL_DATABASE=arthouse
+      - MYSQL_USER=arthouse
+      - MYSQL_PASSWORD=arthouse-db
+    networks:
+      - backend
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    restart: unless-stopped
+
+  arthouse-serv:
+    build:
+      context: ../arthouse-serv
+      dockerfile: ../arthouse-serv/Dockerfile
+    image: fallsoft/arthouse-serv:latest
+    ports:
+      - 8080:8080
+    container_name: arthouse-serv
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://arthouse_db:3306/arthouse
+      SPRING_DATASOURCE_USERNAME: arthouse
+      SPRING_DATASOURCE_PASSWORD: arthouse-db
+    depends_on:
+      - arthouse_db
+    networks:
+      - backend
+    restart: unless-stopped
+networks:
+  backend:
+    driver: "bridge"
